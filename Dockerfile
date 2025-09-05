@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 LABEL authors="bcpl"
 
 # Set build argument for your JAR file
-ARG JAR_FILE=target/*.jar
+ARG JAR_FILE=target/backend-form-0.0.1-SNAPSHOT.jar
 
 # Copy the JAR file into the container
 COPY ${JAR_FILE} app.jar
